@@ -1,0 +1,25 @@
+pushButton = 13; // defining the pushButton to pin 13
+
+void setup() { 
+
+  Serial.begin(9600);      // start serial communication 
+
+  pinMode(pushButton, INPUT);  // use external pull-up resistor 
+
+} 
+
+  
+
+void loop() { 
+
+  int buttonState = digitalRead(pushButton);  // read the button state 
+
+  
+
+  Serial.print("buttonState = "); 
+
+  Serial.println(buttonState);  // print it to the Serial Monitor 
+
+  
+
+  delay(1);  // small delay for stability 
