@@ -4,8 +4,7 @@ void setup() {
 
   Serial.begin(9600);      // start serial communication 
 
-  pinMode(pushButton, INPUT);  // use external pull-up resistor 
-
+  pinMode(pushButton, INPUT);  // defines the push Button as an INPUT
 } 
 
   
